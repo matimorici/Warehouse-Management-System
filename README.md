@@ -12,7 +12,7 @@ El sistema modela el flujo completo de abastecimiento: desde la carga de órdene
 El objetivo del sistema es digitalizar y centralizar la gestión logística de un depósito, mejorando el control de inventario, la trazabilidad de los productos y la eficiencia operativa.
 
 # Diagrama de Clases
-<img width="1336" height="1046" alt="DER-GestorAlmacen" src="https://github.com/user-attachments/assets/aea2b73a-705d-409c-b45e-547df878cc33" />
+<img width="1336" height="1046" alt="DER-GestorAlmacen" src="img\DER-GestorAlmacen.png"/>
 
 
 # Regularidad
