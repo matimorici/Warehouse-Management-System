@@ -1,4 +1,4 @@
-# Gestor Almacen
+# Warehouse Management System
 Sistema de Gestión de Depósito, Stock y Órdenes de Compra
 
 # Integrantes del proyecto
@@ -12,19 +12,10 @@ El sistema modela el flujo completo de abastecimiento: desde la carga de órdene
 El objetivo del sistema es digitalizar y centralizar la gestión logística de un depósito, mejorando el control de inventario, la trazabilidad de los productos y la eficiencia operativa.
 
 # Diagrama de Clases
-Producto.
-Ubicacion.
-Stock.
-MovimientoFisico.
-OrdenCompra.
-LineaCompra.
-Usuario.
-OrdenRetiro.
-LineaRetiro.
-Proveedor.
-ValoraciónProveedor.
+<img width="1336" height="1046" alt="DER-GestorAlmacen" src="https://github.com/user-attachments/assets/aea2b73a-705d-409c-b45e-547df878cc33" />
 
-# Casos de Uso para Regularidad
+
+# Regularidad
 ABMC (Alta, Baja, Modificación, Consulta)
 - Productos
 - Proveedores
@@ -32,36 +23,34 @@ ABMC (Alta, Baja, Modificación, Consulta)
 - Ubicación
 
 ABMC Dependiente
-- OrdenCompra dependiente de Proveedor
-- LineaCompra dependiente de OrdenCompra y Producto
-- Stock dependiente de Producto
-- MovimientoFisico dependiente de Ubicacion
+- MovimientoFisico de Producto y Ubicación.
+- Stock dependiente de Producto.
 
 Caso de uso NO-ABMC
-- Movimiento fisico de stock
-- Valoracion de proveedores
+- Registrar orden de compra.
+- Valoración del proveedor.
 
 Listados
-- Listado de productos y stock (complejo)
+- Listado de productos y stock (complejo).
 - Listado de ordenes de compra.
 - Listado ubicaciones fisicas.
 
-# Casos de Uso para AD
+
+# Aprobación Directa
 ABMC
 - OrdenRetiro
 - LineaRetiro dependiente de OrdenRetiro y Producto
-- ValoraciónProveedor
   
 Casos de uso complejos
-+ Gestión de Orden de compra:
-Operario carga Orden de compra con estado pendiente.
-Actualizacion del stock en atributo stockPendiente.
-Una vez llegada la mercaderia, Operario carga la orden con estado recibida.
-Actualización automática de stock, se quita de stockPendiente y pasa a stockDisponible.
-Posteriormente, se realiza la valoración al proveedor.
-+ Gestión de Orden de Retiro:
-Operario carga el Orden de Retiro seleccionando productos y cantidad.
-Se actualiza el stock de los productos.
+- Gestión de Orden de compra:
+1. Operario carga Orden de compra con estado pendiente.
+2. Actualizacion del stock en atributo cantidadPendiente.
+3. Una vez llegada la mercaderia, Operario carga la orden con estado recibida.
+4. Actualización automática de stock, se quita de cantidadPendiente y pasa a cantidadDisponible.
+5. Posteriormente, se realiza la valoración al proveedor.
+- Gestión de Orden de Retiro:
+1. Operario carga el Orden de Retiro seleccionando productos y cantidad.
+2. Se actualiza el stock de los productos.
 
 Listados complejos
 - Movimientos fisico de productos filtrados por fecha.
