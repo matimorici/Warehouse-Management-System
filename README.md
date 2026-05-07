@@ -7,8 +7,8 @@ Sistema de Gestión de Depósito, Stock y Órdenes de Compra
 - Rufine, Tadeo
 
 # Descripción general del sistema
-Sistema orientado a la gestión integral de un depósito de productos. Permite administrar el stock, organizar la ubicación física de los productos dentro del almacén, gestionar proveedores y registrar órdenes de compra y órdenes de retiro. 
-El sistema modela el flujo completo de abastecimiento: desde la carga de órdenes de compra a proveedores, hasta la recepción de mercadería, actualización automática del stock y control de movimientos internos dentro del depósito. Permite el seguimiento del stock solicitado y la generación de reportes respecto a los proveedores para la toma de decisiones.
+Sistema orientado a la gestión integral de un depósito de productos. Permite administrar el stock, organizar la ubicación física de los productos dentro del almacén, gestionar proveedores y registrar órdenes de compra y órdenes de retiro.  
+El sistema modela el flujo completo de abastecimiento: desde la carga de órdenes de compra a proveedores, hasta la recepción de mercadería, actualización automática del stock y control de movimientos internos dentro del depósito. Permite el seguimiento del stock solicitado y la generación de reportes respecto a los proveedores para la toma de decisiones.  
 El objetivo del sistema es digitalizar y centralizar la gestión logística de un depósito, mejorando el control de inventario, la trazabilidad de los productos y la eficiencia operativa.
 
 # Diagrama de Clases
