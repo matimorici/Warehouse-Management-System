@@ -23,12 +23,13 @@ ABMC (Alta, Baja, Modificación, Consulta)
 - Ubicación
 
 ABMC Dependiente
-- MovimientoFisico de Producto y Ubicación.
+- Producto dependiente de Proveedor.
 - Stock dependiente de Producto.
 
 Caso de uso NO-ABMC
 - Registrar orden de compra.
-- Valoración del proveedor.
+- Registrar MovimientoFisico.
+
 
 Listados
 - Listado de productos y stock (complejo).
@@ -47,7 +48,8 @@ Casos de uso complejos
 2. Actualizacion del stock en atributo cantidadPendiente.
 3. Una vez llegada la mercaderia, Operario carga la orden con estado recibida.
 4. Actualización automática de stock, se quita de cantidadPendiente y pasa a cantidadDisponible.
-5. Posteriormente, se realiza la valoración al proveedor.
+5. Posteriormente, se realiza la Valoración al proveedor.
+
 - Gestión de Orden de Retiro:
 1. Operario carga el Orden de Retiro seleccionando productos y cantidad.
 2. Se actualiza el stock de los productos.
